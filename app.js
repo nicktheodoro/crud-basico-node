@@ -43,4 +43,4 @@ app.delete("/produtos/:id", (req, res) => {
   res.json({ mensagem: `Produto com id ${id} foi deletado com sucesso!` });
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
